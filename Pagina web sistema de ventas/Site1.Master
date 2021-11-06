@@ -1,0 +1,90 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Pagina_web_sistema_de_ventas.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+            background-color: #C0C0C0;
+        }
+        .auto-style3 {
+            width: 331px;
+        }
+        .auto-style4 {
+            width: 207px;
+        }
+        .auto-style5 {
+            width: 182px;
+        }
+        .auto-style6 {
+            width: 144px;
+            height: 84px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="text-align: center">
+            Technology Center</div>
+        <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">
+                    <img class="auto-style6" src="file:///C:/Users/Jose%20Lobos/OneDrive%20-%20Universidad%20Gerardo%20Barrios/Imágenes/Capturas%20de%20pantalla/Captura%20de%20pantalla%20(803).png" />&nbsp;</td>
+                <td colspan="3">Menu Horizontal</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Menu Vertical</td>
+                <td colspan="3">
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">
+                    <asp:TreeView ID="TreeView2" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="Menu Principal 1" Value="Menu Principal 1">
+                                <asp:TreeNode Text="SUBMENU 1" Value="SUBMENU 1"></asp:TreeNode>
+                                <asp:TreeNode Text="SUBMENU 2" Value="SUBMENU 2"></asp:TreeNode>
+                                <asp:TreeNode Text="SUBMENU 3" Value="SUBMENU 3"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Menu Principal 2" Value="Menu Principal 2">
+                                <asp:TreeNode Text="SUBMENU 1" Value="SUBMENU 1"></asp:TreeNode>
+                                <asp:TreeNode Text="SUBMENU 2" Value="SUBMENU 2"></asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Menu Principal 3" Value="Menu Principal 3">
+                                <asp:TreeNode Text="SUBMENU 1" Value="SUBMENU 1">
+                                    <asp:TreeNode Text="SUBMENU 2" Value="SUBMENU 2"></asp:TreeNode>
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                            <asp:TreeNode Text="Consultas" Value="Consultas"></asp:TreeNode>
+                            <asp:TreeNode Text="Acerca De" Value="Acerca De"></asp:TreeNode>
+                            <asp:TreeNode Text="Ayuda" Value="Ayuda"></asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+                </td>
+                <td colspan="3">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td colspan="3">INFORMACION PIE DE PAGINA</td>
+            </tr>
+            <tr>
+                <td class="auto-style3">&nbsp;</td>
+                <td class="auto-style4">PIE DE PAGINA 1</td>
+                <td class="auto-style5">PIE DE PAGINA 2</td>
+                <td>PIE DE PAGINA 3</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
