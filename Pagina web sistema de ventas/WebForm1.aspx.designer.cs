@@ -33,15 +33,6 @@ namespace Pagina_web_sistema_de_ventas
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
 
         /// <summary>
-        /// Control DropDownList1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-
-        /// <summary>
         /// Control GridView2.
         /// </summary>
         /// <remarks>
@@ -51,21 +42,12 @@ namespace Pagina_web_sistema_de_ventas
         protected global::System.Web.UI.WebControls.GridView GridView2;
 
         /// <summary>
-        /// Control SqlDataSource2puestos1.
+        /// Control SqlDataSource2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2puestos1;
-
-        /// <summary>
-        /// Control SqlDataSource2puestos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2puestos;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
     }
 }

@@ -2,6 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your application description page.</h3>
-    <p>Use this area to provide additional information.</p>
+    <h3>Sistema de venta de aparatos electronicos.</h3>
+    <p>technology center es una tienda en linea dedicada a la venta de aparatos electronico , como computadoras,celulares, laptops etc.</p>
 </asp:Content>
