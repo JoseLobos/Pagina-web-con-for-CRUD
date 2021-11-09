@@ -176,6 +176,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="formulario registro empleados.aspx" />
+    <Content Include="Formulario registro.aspx" />
     <Content Include="Formulario web1.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -361,6 +363,20 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="formulario registro empleados.aspx.cs">
+      <DependentUpon>formulario registro empleados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="formulario registro empleados.aspx.designer.cs">
+      <DependentUpon>formulario registro empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario registro.aspx.cs">
+      <DependentUpon>Formulario registro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Formulario registro.aspx.designer.cs">
+      <DependentUpon>Formulario registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Formulario web1.aspx.cs">
       <DependentUpon>Formulario web1.aspx</DependentUpon>
