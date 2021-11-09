@@ -8,6 +8,9 @@
 <p class="text-center">
     &nbsp;</p>
 <p class="text-center">
+    <asp:Image ID="Image1" runat="server" ImageUrl="~/Recursos/Captura de pantalla (819).png" />
+</p>
+<p class="text-center">
     REGISTRO DE USUARIOS AL SISTEMA</p>
 <p>
 </p>
@@ -55,19 +58,19 @@
     &nbsp;</p>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="Button1" runat="server" BackColor="#000066" Text="Nuevo" Width="81px" />
+    <asp:Button ID="Button1" runat="server" BackColor="#66FFFF" Text="Nuevo" Width="81px" />
 &nbsp;&nbsp;
-    <asp:Button ID="Button2" runat="server" BackColor="#000066" Text="Modificar" Width="81px" />
+    <asp:Button ID="Button2" runat="server" BackColor="#66FFFF" Text="Modificar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button3" runat="server" BackColor="#000066" Text="Guardar" Width="81px" />
+    <asp:Button ID="Button3" runat="server" BackColor="#66FFFF" Text="Guardar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button4" runat="server" BackColor="#000066" Text="Limpiar" Width="81px" />
+    <asp:Button ID="Button4" runat="server" BackColor="#66FFFF" Text="Limpiar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button5" runat="server" BackColor="#000066" Text="Salir" Width="81px" />
+    <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Salir" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button6" runat="server" BackColor="#000066" Text="Eliminar" Width="81px" />
+    <asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button7" runat="server" BackColor="#000066" OnClick="Button7_Click" Text="Cancelar" Width="81px" />
+    <asp:Button ID="Button7" runat="server" BackColor="#66FFFF" OnClick="Button7_Click" Text="Cancelar" Width="81px" />
 </p>
 <p>
 </p>
