@@ -5,15 +5,15 @@
 </p>
 <p class="text-center">
     &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
+<p class="text-center">
+    &nbsp;</p>
+<p class="text-center">
     REGISTRO DE USUARIOS AL SISTEMA</p>
 <p>
 </p>
-    <p>
+<p>
 </p>
-    <p>
+<p>
 </p>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

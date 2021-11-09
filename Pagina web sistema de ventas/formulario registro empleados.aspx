@@ -1,17 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="formulario registro empleados.aspx.cs" Inherits="Pagina_web_sistema_de_ventas.formulario_registro_empleados" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <p class="text-center">
-        &nbsp;</p>
+    &nbsp;</p>
 <p class="text-center">
     &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
+<p class="text-center">
+    &nbsp;</p>
+<p class="text-center">
     REGISTRO DE EMPLEADOS</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
+<p class="text-center">
+    &nbsp;</p>
+<p class="text-center">
+    &nbsp;</p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Label ID="Label1" runat="server" Text="Id Empleado"></asp:Label>

@@ -4,6 +4,12 @@
         <br />
     </p>
     <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
+        &nbsp;</p>
+    <p class="text-center">
         LISTADO DE VENTAS</p>
     <p>
     </p>
