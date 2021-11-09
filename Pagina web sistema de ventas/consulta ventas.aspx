@@ -8,7 +8,7 @@
     <p>
     </p>
     <p>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="#33CCFF">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" BackColor="#0066FF">
             <Columns>
                 <asp:BoundField DataField="Id_Cliente" HeaderText="Id_Cliente" SortExpression="Id_Cliente" />
                 <asp:BoundField DataField="Id_Usuario" HeaderText="Id_Usuario" SortExpression="Id_Usuario" />
@@ -26,7 +26,7 @@
     <p>
         &nbsp;</p>
     <p>
-        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo_Producto" DataSourceID="SqlDataSource2" BackColor="#33CCFF">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="Codigo_Producto" DataSourceID="SqlDataSource2" BackColor="#0066FF">
             <Columns>
                 <asp:BoundField DataField="Codigo_Producto" HeaderText="Codigo_Producto" ReadOnly="True" SortExpression="Codigo_Producto" />
                 <asp:BoundField DataField="Nombre_del_Producto" HeaderText="Nombre_del_Producto" SortExpression="Nombre_del_Producto" />

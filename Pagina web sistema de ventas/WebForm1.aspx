@@ -4,7 +4,7 @@
     <br />
     LISTADO DE EMPLEADOS</p>
 <p class="text-center">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource1" BackColor="#33CCFF">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource1" BackColor="#0066CC">
         <Columns>
             <asp:BoundField DataField="Id_Empleado" HeaderText="Id_Empleado" ReadOnly="True" SortExpression="Id_Empleado" />
             <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
@@ -34,7 +34,7 @@
     <p class="text-center">
         &nbsp;</p>
 <p>
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" BackColor="#66CCFF">
+    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" BackColor="#0066FF">
         <Columns>
             <asp:BoundField DataField="Id_de_Puesto" HeaderText="Id_de_Puesto" SortExpression="Id_de_Puesto" />
             <asp:BoundField DataField="Puesto" HeaderText="Puesto" SortExpression="Puesto" />
