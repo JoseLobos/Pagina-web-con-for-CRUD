@@ -11,7 +11,7 @@ namespace Pagina_web_sistema_de_ventas
 {
 
 
-    public partial class consulta_ventas
+    public partial class Empleados
     {
 
         /// <summary>
@@ -31,23 +31,5 @@ namespace Pagina_web_sistema_de_ventas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-
-        /// <summary>
-        /// Control GridView2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView2;
-
-        /// <summary>
-        /// Control SqlDataSource2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
     }
 }

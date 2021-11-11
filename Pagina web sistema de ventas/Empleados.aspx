@@ -1,18 +1,20 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Pagina_web_sistema_de_ventas.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Empleados.aspx.cs" Inherits="Pagina_web_sistema_de_ventas.Empleados" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <p class="text-center">
+    <p>
     <br />
-    </p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+</p>
+<p class="text-center">
+    &nbsp;</p>
+<p class="text-center">
     LISTADO DE EMPLEADOS</p>
 <p class="text-center">
-    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource1" BackColor="#66FFFF">
+    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="Id_Empleado" DataSourceID="SqlDataSource1">
         <Columns>
             <asp:BoundField DataField="Id_Empleado" HeaderText="Id_Empleado" ReadOnly="True" SortExpression="Id_Empleado" />
             <asp:BoundField DataField="Nombres" HeaderText="Nombres" SortExpression="Nombres" />
@@ -34,23 +36,5 @@
         </Columns>
     </asp:GridView>
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT [Id_Empleado], [Nombres], [Apellidos], [Fecha_de_Nacimiento], [Telefono], [Direccion], [Genero], [Departamento], [Nivel_laboral], [Sueldo], [Observaciones], [Correo], [Numero_de_Dui], [Numero_de_Nit], [Numero_de_AFP], [Fecha_de_Ingreso], [Jefatura] FROM [Empleados]"></asp:SqlDataSource>
-</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-    <p class="text-center">
-        &nbsp;</p>
-<p>
-    <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" BackColor="#66FFFF">
-        <Columns>
-            <asp:BoundField DataField="Id_de_Puesto" HeaderText="Id_de_Puesto" SortExpression="Id_de_Puesto" />
-            <asp:BoundField DataField="Puesto" HeaderText="Puesto" SortExpression="Puesto" />
-            <asp:BoundField DataField="Id_de_Empleado" HeaderText="Id_de_Empleado" SortExpression="Id_de_Empleado" />
-        </Columns>
-    </asp:GridView>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Sistema de ventasConnectionString %>" SelectCommand="SELECT [Id_de_Puesto], [Puesto], [Id_de_Empleado] FROM [Puestos]"></asp:SqlDataSource>
-</p>
-<p>
 </p>
 </asp:Content>

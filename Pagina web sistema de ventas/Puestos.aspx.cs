@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Pagina_web_sistema_de_ventas
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Puestos : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
