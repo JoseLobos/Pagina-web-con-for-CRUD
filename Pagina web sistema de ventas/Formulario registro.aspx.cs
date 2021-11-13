@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Pagina_web_sistema_de_ventas
 {
@@ -16,6 +18,68 @@ namespace Pagina_web_sistema_de_ventas
 
         protected void Button7_Click(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            {
+                SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Login;Integrated Security=True");
+                string usuario;
+                usuario = (TextBox1.Text);
+
+                SqlCommand consulta_comprobar = new SqlCommand("  Select count(*) From Usuarios1 WHERE Usuario=@Usuario  ", conexion);
+                
+                conexion.Open();
+                consulta_comprobar.Parameters.AddWithValue("@usuario", usuario);
+                int i;
+                i=(System.Convert.ToInt32(consulta_comprobar.ExecuteScalar()));
+
+                if (i > 0)
+                {
+                    MessageBox.Show ("El Nombre de usuario ingresado ya esta en uso");
+                conexion.Close();
+                }
+                else
+                {
+                    
+                    string cadenaconsulta;
+                   
+                    cadenaconsulta = "Insert into usuarios1 (usuario,contraseña,nivel) values (@usuario,@contraseña,@nivel)";
+
+                    SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
+                    consulta_agregar.Parameters.AddWithValue("@usuario", TextBox1.Text);
+                    consulta_agregar.Parameters.AddWithValue("@contraseña", TextBox2.Text);
+                    consulta_agregar.Parameters.AddWithValue("@nivel", TextBox3.Text);
+
+                    if (i > 0)
+                    {
+                        try
+                        {
+
+
+
+                            consulta_agregar.ExecuteNonQuery();
+                            conexion.Close();
+
+                            MessageBox.Show("Se agrego el nuevo usuario correctamente");
+                        }
+
+
+
+                        catch 
+                        {
+                            MessageBox.Show("El usuario que quiere registrar ya esta en uso");
+                        }
+
+
+                    }
+                }
+
+
+
+            }
+
 
         }
     }
