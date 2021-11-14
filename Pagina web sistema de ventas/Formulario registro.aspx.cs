@@ -28,7 +28,7 @@ namespace Pagina_web_sistema_de_ventas
                 string usuario;
                 usuario = (TextBox1.Text);
 
-                SqlCommand consulta_comprobar = new SqlCommand("  Select count(*) From Usuarios1 WHERE Usuario=@Usuario  ", conexion);
+                SqlCommand consulta_comprobar = new SqlCommand("  Select count(*) From Usuarios WHERE Usuario=@Usuario  ", conexion);
                 
                 conexion.Open();
                 consulta_comprobar.Parameters.AddWithValue("@Usuario", usuario);
@@ -45,13 +45,15 @@ namespace Pagina_web_sistema_de_ventas
                     
                     string cadenaconsulta;
                    
-                    cadenaconsulta = "Insert into usuarios1 (Id_usuario,Usuario,Contraseña,Nivel) values (@Id_usuario,@usuario,@contraseña,@nivel)";
+                    cadenaconsulta = "Insert into usuarios (Id_usuario,Usuario,Clave,Nivel,Correo,Direccion) values (@Id_usuario,@usuario,@clave,@nivel,@correo,@direccion)";
 
                     SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
                     consulta_agregar.Parameters.AddWithValue("@Id_usuario", TextBox4.Text);
                     consulta_agregar.Parameters.AddWithValue("@usuario", TextBox1.Text);
-                    consulta_agregar.Parameters.AddWithValue("@contraseña", TextBox2.Text);
+                    consulta_agregar.Parameters.AddWithValue("@Clave", TextBox2.Text);
                     consulta_agregar.Parameters.AddWithValue("@nivel",Convert.ToInt32( TextBox3.Text));
+                    consulta_agregar.Parameters.AddWithValue("@correo", TextBox5.Text);
+                    consulta_agregar.Parameters.AddWithValue("@direccion", TextBox6.Text);
 
                     if (i >= 0)
                     {
