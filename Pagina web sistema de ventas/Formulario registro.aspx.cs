@@ -38,7 +38,13 @@ namespace Pagina_web_sistema_de_ventas
                 if (i > 0)
                 {
                     MessageBox.Show ("El Nombre de usuario ingresado ya esta en uso");
-                conexion.Close();
+                    TextBox1.Text = "";
+                    TextBox2.Text = "";
+                    TextBox3.Text = "";
+                    TextBox4.Text = "";
+                    TextBox5.Text = "";
+                    TextBox6.Text = "";
+                    conexion.Close();
                 }
                 else
                 {
@@ -66,6 +72,13 @@ namespace Pagina_web_sistema_de_ventas
                             conexion.Close();
 
                             MessageBox.Show("Se agrego el nuevo usuario correctamente");
+                           
+                            TextBox1.Text = "";
+                            TextBox2.Text = "";
+                            TextBox3.Text = "";
+                            TextBox4.Text = "";
+                            TextBox5.Text = "";
+                            TextBox6.Text = "";
                         }
 
 
@@ -84,6 +97,16 @@ namespace Pagina_web_sistema_de_ventas
             }
 
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
+            TextBox4.Text = "";
+            TextBox5.Text = "";
+            TextBox6.Text = "";
         }
     }
 }
