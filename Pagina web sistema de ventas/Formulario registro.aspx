@@ -17,6 +17,10 @@
 <p>
 </p>
 <p>
+    &nbsp;
+    <asp:Label ID="Label4" runat="server" Text="Usuario"></asp:Label>
+    &nbsp;
+    <asp:TextBox ID="TextBox4" runat="server" Width="537px"></asp:TextBox>
 </p>
 <p>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
