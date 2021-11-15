@@ -110,7 +110,13 @@
     <asp:TextBox ID="TextBox16" runat="server" Width="537px"></asp:TextBox>
 </p>
 <p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:Label ID="Label17" runat="server" Text="Nivel Laboral"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <asp:TextBox ID="TextBox17" runat="server" Width="537px"></asp:TextBox>
     &nbsp;</p>
+    <p>
+        &nbsp;</p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="Button1" runat="server" BackColor="#66FFFF" Text="Actualizar" Width="81px" />
@@ -123,10 +129,9 @@
 &nbsp;
     <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Guardar" Width="81px" />
+    <asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Guardar" Width="81px" OnClick="Button6_Click" />
 &nbsp;
     <asp:Button ID="Button7" runat="server" BackColor="#66FFFF" Text="Salir" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button8" runat="server" BackColor="#66FFFF" Text="Limpiar" Width="81px" />
-</p>
+    </p>
 </asp:Content>
