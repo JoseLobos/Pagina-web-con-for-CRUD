@@ -180,6 +180,7 @@
     <Content Include="formulario registro empleados.aspx" />
     <Content Include="Formulario registro.aspx" />
     <Content Include="Formulario web1.aspx" />
+    <Content Include="fregistropuesto.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -390,6 +391,13 @@
     </Compile>
     <Compile Include="Formulario web1.aspx.designer.cs">
       <DependentUpon>Formulario web1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fregistropuesto.aspx.cs">
+      <DependentUpon>fregistropuesto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fregistropuesto.aspx.designer.cs">
+      <DependentUpon>fregistropuesto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
