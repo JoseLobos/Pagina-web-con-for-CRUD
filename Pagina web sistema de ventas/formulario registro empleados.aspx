@@ -127,11 +127,11 @@
 &nbsp;
     <asp:Button ID="Button4" runat="server" BackColor="#66FFFF" Text="Cancelar" Width="81px" />
 &nbsp;
-    <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="81px" />
+    <asp:Button ID="Button5" runat="server" BackColor="#66FFFF" Text="Eliminar" Width="81px" OnClick="Button5_Click" />
 &nbsp;
     <asp:Button ID="Button6" runat="server" BackColor="#66FFFF" Text="Guardar" Width="81px" OnClick="Button6_Click" />
 &nbsp;
-    <asp:Button ID="Button7" runat="server" BackColor="#66FFFF" Text="Salir" Width="81px" />
+    <asp:Button ID="Button7" runat="server" BackColor="#66FFFF" Text="Salir" Width="81px" OnClick="Button7_Click" />
 &nbsp;
     </p>
 </asp:Content>

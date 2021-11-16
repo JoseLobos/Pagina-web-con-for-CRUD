@@ -126,5 +126,31 @@ namespace Pagina_web_sistema_de_ventas
             }
 
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
+
+            conexion.Open();
+            string eliminar;
+
+            eliminar = "DELETE FROM Empleados WHERE ID_EMPLEADO=@ID_EMPLEADO";
+
+            SqlCommand cmd = new SqlCommand(eliminar, conexion);
+
+            cmd.Parameters.AddWithValue("@Id_Empleado", TextBox1.Text);
+            cmd.ExecuteNonQuery();
+            conexion.Close();
+            MessageBox.Show(" El empleado fue eliminado  con exito");
+
+        }
+
+                
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
