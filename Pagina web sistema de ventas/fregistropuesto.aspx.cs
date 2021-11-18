@@ -32,7 +32,7 @@ namespace Pagina_web_sistema_de_ventas
 
                 if (i > 0)
                 {
-                    MessageBox.Show("El empleado ya esta registro en un puesto");
+                    MessageBox.Show("El empleado ya esta registrado en un puesto");
                     TextBox1.Text = "";
                     TextBox2.Text = "";
                     TextBox3.Text = "";
@@ -64,7 +64,7 @@ namespace Pagina_web_sistema_de_ventas
                             consulta_agregar.ExecuteNonQuery();
                             conexion.Close();
 
-                            MessageBox.Show("Se agrego el puesto correspondiente al empleado");
+                            MessageBox.Show("Se agrego el puesto correspondiente al empleado ingresado");
 
                             TextBox1.Text = "";
                             TextBox2.Text = "";
@@ -102,6 +102,24 @@ namespace Pagina_web_sistema_de_ventas
             cmd.ExecuteNonQuery();
             conexion.Close();
             MessageBox.Show(" El empleado fue eliminado del puesto con exito");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conexion = new SqlConnection(@"Data Source=LAPTOP-QM112JVD\MSSQLSERVER01;Initial Catalog=Sistema de ventas;Integrated Security=True");
+            conexion.Open();
+
+            string actualizar = "UPDATE Puestos SET Id_de_Puesto=@Id_de_Puesto, Id_de_Empleado=@Id_de_Empleado,Puesto=@Puesto WHERE Id_de_Empleado=@Id_de_Empleado";
+            SqlCommand cmd2 = new SqlCommand(actualizar, conexion);
+
+            cmd2.Parameters.AddWithValue("@Id_de_Puesto", TextBox1.Text);
+            cmd2.Parameters.AddWithValue("@Id_de_Empleado", TextBox2.Text);
+            cmd2.Parameters.AddWithValue("@Puesto", TextBox3.Text);
+            cmd2.ExecuteNonQuery();
+            MessageBox.Show("Los datos fueron actualizados con exito");
+            TextBox1.Text = "";
+            TextBox2.Text = "";
+            TextBox3.Text = "";
         }
     }
 }
