@@ -199,5 +199,31 @@ namespace Pagina_web_sistema_de_ventas
             TextBox16.Text = "";
             TextBox17.Text = "";
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Button3.Visible = false;
+            Button6.Visible = false;
+            Button5.Visible = false;
+            Button2.Visible = false;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Button3.Visible = false;
+            Button5.Visible = false;
+            Button1.Visible = false;
+            Button2.Visible = false;
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Button1.Visible = Visible;
+            Button2.Visible = Visible;
+            Button3.Visible = Visible;
+            Button4.Visible = Visible;
+            Button5.Visible = Visible;
+
+        }
     }
 }
