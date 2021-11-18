@@ -39,7 +39,7 @@ namespace Pagina_web_sistema_de_ventas
                     TextBox4.Text = "";
                     TextBox5.Text = "";
                     TextBox6.Text = "";
-                    TextBox7.Text = "";
+                    DropDownList1.Text = "";
                     TextBox8.Text = "";
                     TextBox9.Text = "";
                     TextBox10.Text = "";
@@ -66,7 +66,7 @@ namespace Pagina_web_sistema_de_ventas
                     consulta_agregar.Parameters.AddWithValue("@Fecha_de_Nacimiento", TextBox4.Text);
                     consulta_agregar.Parameters.AddWithValue("@Telefono", TextBox5.Text);
                     consulta_agregar.Parameters.AddWithValue("@Direccion", TextBox6.Text);
-                    consulta_agregar.Parameters.AddWithValue("@Genero", TextBox7.Text);
+                    consulta_agregar.Parameters.AddWithValue("@Genero", DropDownList1.Text);
                     consulta_agregar.Parameters.AddWithValue("@Departamento", TextBox8.Text);
                     consulta_agregar.Parameters.AddWithValue("@Nivel_laboral", TextBox17.Text);
                     consulta_agregar.Parameters.AddWithValue("@Sueldo", TextBox9.Text);
@@ -97,7 +97,7 @@ namespace Pagina_web_sistema_de_ventas
                             TextBox4.Text = "";
                             TextBox5.Text = "";
                             TextBox6.Text = "";
-                            TextBox7.Text = "";
+                            DropDownList1.Text = "Seleccione el genero";
                             TextBox8.Text = "";
                             TextBox9.Text = "";
                             TextBox10.Text = "";
@@ -167,7 +167,7 @@ namespace Pagina_web_sistema_de_ventas
             cmd2.Parameters.AddWithValue("@Fecha_de_Nacimiento", TextBox4.Text);
             cmd2.Parameters.AddWithValue("@Telefono", TextBox5.Text);
             cmd2.Parameters.AddWithValue("@Direccion", TextBox6.Text);
-            cmd2.Parameters.AddWithValue("@Genero", TextBox7.Text);
+            cmd2.Parameters.AddWithValue("@Genero", DropDownList1.Text);
             cmd2.Parameters.AddWithValue("@Departamento", TextBox8.Text);
             cmd2.Parameters.AddWithValue("@Nivel_laboral", TextBox17.Text);
             cmd2.Parameters.AddWithValue("@Sueldo", TextBox9.Text);
@@ -187,7 +187,7 @@ namespace Pagina_web_sistema_de_ventas
             TextBox4.Text = "";
             TextBox5.Text = "";
             TextBox6.Text = "";
-            TextBox7.Text = "";
+            DropDownList1.Text = "Seleccione el genero";
             TextBox8.Text = "";
             TextBox9.Text = "";
             TextBox10.Text = "";
@@ -223,6 +223,7 @@ namespace Pagina_web_sistema_de_ventas
             Button3.Visible = Visible;
             Button4.Visible = Visible;
             Button5.Visible = Visible;
+            Button6.Visible = Visible;
 
         }
     }

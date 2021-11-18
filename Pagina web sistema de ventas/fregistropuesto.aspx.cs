@@ -35,7 +35,7 @@ namespace Pagina_web_sistema_de_ventas
                     MessageBox.Show("El empleado ya esta registrado en un puesto");
                     TextBox1.Text = "";
                     TextBox2.Text = "";
-                    TextBox3.Text = "";
+                    DropDownList2.Text = "";
                     
                     
                     conexion.Close();
@@ -50,7 +50,7 @@ namespace Pagina_web_sistema_de_ventas
                     SqlCommand consulta_agregar = new SqlCommand(cadenaconsulta, conexion);
                     consulta_agregar.Parameters.AddWithValue("@Id_de_puesto", TextBox1.Text);
                     consulta_agregar.Parameters.AddWithValue("@id_de_empleado", TextBox2.Text);
-                    consulta_agregar.Parameters.AddWithValue("@puesto", TextBox3.Text);
+                    consulta_agregar.Parameters.AddWithValue("@puesto", DropDownList2.Text);
                     
                     
 
@@ -68,7 +68,7 @@ namespace Pagina_web_sistema_de_ventas
 
                             TextBox1.Text = "";
                             TextBox2.Text = "";
-                            TextBox3.Text = "";
+                            DropDownList2.Text = "";
                         }
 
 
@@ -119,7 +119,7 @@ namespace Pagina_web_sistema_de_ventas
             MessageBox.Show("Los datos fueron actualizados con exito");
             TextBox1.Text = "";
             TextBox2.Text = "";
-            TextBox3.Text = "";
+            DropDownList2.Text = "";
         }
 
         protected void Button2_Click(object sender, EventArgs e)
